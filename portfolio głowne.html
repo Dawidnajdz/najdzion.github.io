@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Dawid Stańczak</title>
+    <style>
+       
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0078d4, #005a9e);
+            color: #fff;
+            text-align: center;
+            padding: 2rem 1rem;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0.5rem 0;
+            font-size: 2.5rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.3rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background-color: #005a9e;
+            text-align: center;
+            padding: 0.5rem 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #f0f4f8;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            padding: 2rem;
+            flex: 1;
+        }
+
+        .card {
+            background-color: #fff;
+            border: none;
+            border-radius: 10px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card h2 {
+            color: #005a9e;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+
+        .card p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        .contact {
+            text-align: center;
+            padding: 3rem 1rem;
+            background-color: #e7f3ff;
+            border-top: 2px solid #0078d4;
+        }
+
+        .contact h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #0078d4;
+        }
+
+        .contact a {
+            color: #0078d4;
+            text-decoration: none;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            font-size: 0.9rem;
+            margin-top: auto;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portfolio Dawid Stańczak</h1>
+        <p>Ucze się w EZN, mam 17 lat</p>
+    </header>
+
+    <nav>
+        <a href="#jezyki">Języki</a>
+        <a href="#hobby">Hobby</a>
+        <a href="#o-mnie">O mnie</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="html-css.html">HTML i CSS</a>
+    </nav>
+
+    <section id="jezyki" class="container">
+        <div class="card">
+            <h2>Języki</h2>
+            <p><strong>Polski:</strong> Główny język ojczysty</p>
+            <p><strong>Angielski:</strong> Poziom B3 - zaawansowany</p>
+        </div>
+
+        <div id="hobby" class="card">
+            <h2>Hobby</h2>
+            <p>Moją pasją jest <strong>boks</strong>, który uczy dyscypliny, wytrzymałości i determinacji. Uwielbiam również <strong>gry komputerowe</strong>, które pozwalają mi rozwijać refleks i zdolność strategicznego myślenia. Kolejnym z moich zainteresowań jest <strong>naprawa komputerów</strong>, dzięki czemu pogłebiam swoją wiedzy o technologii. 
+            Od czasu do czasu potrafię też z przymrużeniem oka "<strong>wyzywać mangozjebów</strong>", czyli humorystycznie przekomarzać się z osobami zakochanymi w mandze i anime. ;)</p>
+        </div>
+
+        <div id="o-mnie" class="card">
+            <h2>O mnie</h2>
+            <p>Jestem młodym, ambitnym uczniem szkoły EZN na profilu technik informatyk. Uczę się i rozwijam w wielu kierunkach.</p>
+        </div>
+    </section>
+
+    <section id="kontakt" class="contact">
+        <h2>Kontakt</h2>
+        <p>Skontaktuj się ze mną przez e-mail:</p>
+        <a href="mailto:dawidnajdzion74@gmail.com">dawidnajdzion74@gmail.com</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Dawid Stańczak | Wszystkie prawa zastrzeżone</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML i CSS</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background: linear-gradient(135deg, #d32f2f, #b71c1c);
+            color: #fff;
+            text-align: center;
+            padding: 2rem 1rem;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0.5rem 0;
+            font-size: 2.5rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        nav {
+            background-color: #b71c1c;
+            text-align: center;
+            padding: 0.5rem 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #f0f4f8;
+        }
+
+        .content {
+            flex: 1;
+            padding: 2rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content h2 {
+            color: #b71c1c;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .content p {
+            font-size: 1.2rem;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+
+        .content a {
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            background-color: #d32f2f;
+            padding: 0.8rem 1.5rem;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .content a:hover {
+            background-color: #b71c1c;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            font-size: 0.9rem;
+            margin-top: auto;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HTML i CSS</h1>
+    </header>
+
+    <nav>
+        <a href="portfolio głowne.html">Powrót do Portfolio</a>
+    </nav>
+
+    <section class="content">
+        <h2>Czym jest HTML i CSS?</h2>
+        <p><strong>HTML</strong> (HyperText Markup Language) jest podstawowym językiem służącym do tworzenia struktury stron internetowych. Dzięki niemu możemy definiować nagłówki, akapity, obrazy i linki.
+        </p>
+        <p><strong>CSS</strong> (Cascading Style Sheets) jest językiem odpowiedzialnym za wygląd strony. Pozwala na stylizację tekstu, kolorów, rozmiarów oraz układu elementów na stronie internetowej.</p>
+        <a href="portfolio głowne.html">Powrót do strony głównej</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Dawid Stańczak | Wszystkie prawa zastrzeżone</p>
+    </footer>
+</body>
+</html>
